@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> Space </title>
+        <link rel="stylesheet" style type="text/css" href="../style/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    </head>
+
+    <body>
+        <div class="container-slide">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="../images/Space.JPG"></div>
+              <div class="swiper-slide"><img src="../images/Space (2).JPG"></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', 
+            {
+                loop: true,
+                pagination: 
+            {
+                el: '.swiper-pagination',
+            },
+                navigation: 
+            {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
+    </body>
+</html>
