@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title> My Room </title>
+        <link rel="stylesheet" style type="text/css" href="../index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    </head>
+
+    <body>
+        <h1 class="wp"> My Room </h1>
+        <div class="container-slide">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="../images/My Room (4).JPG"></div>
+              <div class="swiper-slide"><img src="../images/My Room (3).JPG"></div>
+              <div class="swiper-slide"><img src="../images/My Room (5).JPG"></div>
+              <div class="swiper-slide"><img src="../images/My Room.JPG"></div>
+              <div class="swiper-slide"><img src="../images/My Room (2).JPG"></div>
+              <div class="swiper-slide"><img src="../images/My Room 3.JPG"></div>
+              <div class="swiper-slide"><img src="../images/My Room 4.JPG"></div>
+              <div class="swiper-slide"><img src="../images/My Room 5.JPG"></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+        </div>
+        <p class="desc-wp">This is my room, this is where I always stay because of course it is my room. 
+        </p>
+
+        <center><button> Back </button></center>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', 
+            {
+                loop: true,
+                pagination: 
+            {
+                el: '.swiper-pagination',
+            },
+                navigation: 
+            {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+
+            let buttBack = document.querySelector('button');
+
+            buttBack.addEventListener('click',() => (
+    
+            window.history.back()
+            ));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title> Balcony </title>
+        <link rel="stylesheet" style type="text/css" href="../index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    </head>
+
+    <body>
+        <div class="container-slide">
+        <h1 class="wp"> The Balcony </h1>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="../images/Balcony.JPG"></div>
+              <div class="swiper-slide"><img src="../images/Balcony (2).JPG"></div>
+              <div class="swiper-slide"><img src="../images/Balcony (3).JPG"></div>
+              <div class="swiper-slide"><img src="../images/Balcony (4).JPG"></div>
+              <div class="swiper-slide"><img src="../images/Balcony (5).JPG"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+          </div>
+        </div>
+
+        <p class="desc-wp"> This is our balcony. Looks very nice right? You can enjoy viewing the cars passing by 
+            and most importantly, these electric wires that are very organized. </p>
+        
+      <center><button> Back </button></center>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', 
+            {
+                loop: true,
+                pagination: 
+            {
+                el: '.swiper-pagination',
+            },
+                navigation: 
+            {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+
+            let buttBack = document.querySelector('button');
+
+            buttBack.addEventListener('click',() => (
+
+                window.history.back()
+            ));
+        </script>
+    </body>
+</html>

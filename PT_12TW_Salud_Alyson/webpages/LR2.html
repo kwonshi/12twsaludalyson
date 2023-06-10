@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title> Living Room 2 </title>
+        <link rel="stylesheet" style type="text/css" href="../index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    </head>
+
+    <body>
+        <h1 class="wp"> The Living Room 2 </h1>
+        <div class="container-slide">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="../images/2ndLR.JPG"></div>
+              <div class="swiper-slide"><img src="../images/2ndLR (2).JPG"></div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+          </div>
+        </div>
+
+        <p class="desc-wp">Our 2nd living room. This is where we usually do our business, 
+            which is a clothing store called  “<a href="https://www.facebook.com/MusicClothingPH" target="_blank">Musiclo.</a>” . There are printing press machines here for the clothes, me, 
+            my brother and dad are the ones who mostly handle these machines. But this was still a living room before. 
+        </p>
+
+        <center><button> Back </button></center>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper', 
+            {
+                loop: true,
+                pagination: 
+            {
+                el: '.swiper-pagination',
+            },
+                navigation: 
+            {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+
+            let buttBack = document.querySelector('button');
+
+            buttBack.addEventListener('click',() => (
+    
+            window.history.back()
+            ));
+        </script>
+    </body>
+</html>
