@@ -1,11 +1,12 @@
 <html>
     <head>
         <title> Living Room </title>
-        <link rel="stylesheet" style type="text/css" href="../style/index.css">
+        <link rel="stylesheet" style type="text/css" href="../index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     </head>
 
     <body>
+        <h1 class="wp"> The Living Room </h1>
         <div class="container-slide">
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -28,6 +29,12 @@
           </div>
         </div>
 
+        <p class="desc-wp"> Our living room, where we always stay to watch movies or videos together with my family. 
+        That is how we usually bond when we’re at home. This is also where our visitors usually stay.
+             </p>
+
+        <center><button> Back </button></center>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
         <script>
@@ -44,6 +51,13 @@
                 prevEl: '.swiper-button-prev',
             },
             });
+
+            let buttBack = document.querySelector('button');
+
+            buttBack.addEventListener('click',() => (
+    
+            window.history.back()
+            ));
         </script>
     </body>
 </html>

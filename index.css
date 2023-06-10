@@ -17,7 +17,7 @@ body
 {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/1.jpg);
+    background-image: url(./images/1.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -29,8 +29,8 @@ nav
 }
 .logo
 {
-    width: 350px;
-    margin: 20px 0;
+    width: 250px;
+    margin: 10px 0;
 }
 nav ul
 {
@@ -61,7 +61,7 @@ nav ul li a::after
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.3s linear;
+    transition: 0.3s;
 }
 nav ul li a:hover::after
 {
@@ -177,7 +177,7 @@ nav.sticky
 {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/House.jpg);
+    background-image: url(./images/House.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -219,19 +219,25 @@ nav.sticky
     color: #617A55;
     text-align: center;
 }
+.house-img
+{
+    display: block;
+    margin-top: 50px;
+    place-content: center;
+}
 
-/* -------------------------------- Image Sliders -------------------------------------- */
+/* -------------------------------- Webpages -------------------------------------- */
 .contaner-slide
 {
-    width: 100%;
-    height: 100vh;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
 .swiper
 {
-    width: 80%;
+    width: 50%;
     height: fit-content;
+    
 }
 .swiper-slide img
 {
@@ -245,6 +251,33 @@ nav.sticky
 {
     color: white;
 }
+.wp
+{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30pt;
+    font-weight: 800;
+    color: #617A55;
+}
+button
+{
+    position: relative;
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: #617A55;
+    border-width: 2px;
+    color: black;
+    background-color: #617A55;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    align-items: center;
+}
+
 /* -------------------------------------Takeaways-------------------------------------*/
 #takeaways
 {
@@ -255,6 +288,7 @@ nav.sticky
     display: block;
     align-items: center;
     padding: 20px;
+    margin-top: 30px;
 }
 .ty-list div
 {
@@ -284,6 +318,15 @@ nav.sticky
     line-height: 160%;
     padding-top: 50px;
 }
+.desc-wp
+{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    white-space: pre-line;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
 /* ---------------------------------------------------------Photo Gallery------------------------------------------------------------- */
 #gallery
 {
@@ -311,6 +354,10 @@ nav.sticky
 {
     text-align: center;
     padding: 10px 0;
+}
+.desc-wp a
+{
+    color: #617A55;
 }
 /* -------------------------------------------------------Footer------------------------------------------------------------- */
 footer

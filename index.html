@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title> Journaly </title>
-        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="index.css">
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -51,6 +52,7 @@
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('hobbies')"> Hobbies </p>
                             <p class="tab-links" onclick="opentab('fave-artists')"> Fave Artists </p>
+                            <p class="tab-links" onclick="opentab('fun-facts')"> Fun Facts </p>
 
                         </div>
                             <div class="tab-contents active-tab" id="hobbies">
@@ -71,11 +73,25 @@
                                 <li> <span> <a href="https://www.youtube.com/@pledis17" target="_blank"> Seventeen </a> </span></li>
                                 <li> <span> <a href="https://www.youtube.com/@ENHYPENOFFICIAL" target="_blank">Enhypen </a> </span></li>
                                 <li> <span><a href="https://www.youtube.com/@NCTsmtown" target="_blank"> NCT </a>  </span></li>
+                                <li> <span><a href="https://www.youtube.com/@dlwlrma" target="_blank"> IU </a>  </span></li>
                                 <li> <span> <a href="https://www.youtube.com/@MenITrust" target="_blank">Men I Trust </a> </span></li>
                                 <li> <span> <a href="https://www.youtube.com/@OneClickStraight" target="_blank">One Click Straight </a></span></li>
                                 <li> <span> <a href="https://www.youtube.com/@TheJapaneseHouse" target="_blank">The Japanese House  </a></span></li>
                             </ul>
                             </div>
+                            <div class="tab-contents" id="fun-facts">
+                                <p class="bands-text"> Here are some interesting facts about me: </p>
+                                <ul>
+                                    <li> <span> I had to wear glasses before due to poor eyesight, but now my vision is 20/20.</span></li>
+                                    <li> <span> I usually eat Tinola combined with sunny side up egg (It tastes good tho).</span></li>
+                                    <li> <span> I'm a camera enthusiast. </span></li>
+                                    <li> <span> I can drive. </span></li>
+                                    <li> <span> My favorite color is pastel green or any shade of green. </span></li>
+                                    <li> <span> My MBTI is INFP but can also be INTP (IDK why). </span></li>
+                                    <li> <span> I'm a fast learner. </span></li>
+                                    <li> <span> I don’t like the other kinds of vegetables like eggplant, beans, ampalaya, pumpkin, etc.</span></li>
+                                </ul> 
+                                </div>
                         </div>  
                     </div>
                 </div>
@@ -89,83 +105,85 @@
                 <h1 class="house-text"> My House </h1>
                  <p class="desc-house">
                     The picture shown above is where I live. For this part, 
-                    I will tour you in our house. Here's the floor plan, you 
-                    can click each room you want to see! </p>
+                    I will tour you in our house. Below is the floor plan, <strong>you 
+                    can click on each room you want to see!</strong> <br/>
+                    <em>(Note: Some of the rooms aren't available due to privacy.) </em> </p>
                 </div>
-            
-            <img src="./images/Floor Plan.png" usemap="#image-map">
+            <center>
+            <img class="house-img" src="./images/Floor Plan.png" usemap="#image-map">
             <map name="image-map">
 
-                <area target="_blank"
+                <area target="_self"
                 title="Living Room"
                 alt="Living Room"
                 href="./webpages/LR.html"
-                coords="627,637,582,639,576,774,472,769,423,723,420,577,625,580"
+                coords="201,252,337,250,339,291,307,296,309,380,233,381,201,350"
                 shape="poly">
 
-                <area target="_blank"
+                <area target="_self"
                 title="Dining Room"
                 alt="Dining Room"
                 href="./webpages/DR.html"
-                coords="582,644,828,647,830,849,588,846"
-                shape="poly">
+                coords="311,294,475,432"
+                shape="rect">
 
-                <area target="_blank"
+                <area target="_self"
                 title="Garden"
                 alt="Garden"
                 href="./webpages/GD.html"
-                coords="471,858,825,858,830,984,472,987"
-                shape="poly">
+                coords="234,435,475,525"
+                shape="rect">
 
-                <area target="_blank"
+                <area target="_self"
                 title="Space"
                 alt="Space"
                 href="./webpages/space.html"
-                coords="415,447,417,725,466,780,463,989,280,939,208,448"
+                coords="56,161,197,162,197,351,231,385,232,527,106,493"
                 shape="poly">
 
-                <area target="_blank"
+                <area target="_self"
                 title="Office"
                 alt="Office"
                 href="./webpages/office.html"
-                coords="420,443,563,450,566,575,425,574"
-                shape="poly">
+                coords="201,163,300,250"
+                shape="rect">
 
-                <area target="_blank"
+                <area target="_self"
                 title="Dirty Kitchen"
                 alt="Dirty Kitchen"
                 href="./webpages/DK.html"
-                coords="731,447,828,445,828,636,728,637"
-                shape="poly">
+                coords="408,162,476,291"
+                shape="rect">
 
-                <area target="_blank"
+                <area target="_self"
                 title="Garage"
                 alt="Garage"
                 href="./webpages/Garage.html"
-                coords="487,374,568,378,569,440,207,440,204,300,480,296"
+                coords="241,59,242,111,297,112,298,157,57,156,57,61"
                 shape="poly">
 
-                <area target="_blank"
+                <area target="_self"
                 title="My Room"
                 alt="My Room"
                 href="./webpages/MR.html"
-                coords="1075,552,1081,606,1143,614,1141,760,1003,757,983,553"
+                coords="132,737,133,772,173,773,175,872,84,873,71,736"
                 shape="poly">
 
-                <area target="_blank"
+                <area target="_self"
                 title="2nd Living Room"
                 alt="2nd Living Room"
                 href="./webpages/LR2.html"
-                coords="1030,369,1234,375,1236,548,1034,544"
-                shape="poly">
+                coords="101,614,240,731"
+                shape="rect">
 
-                <area target="_blank"
+                <area target="_self"
                 title="Balcony"
                 alt="Balcony"
                 href="./webpages/balcony.html"
-                coords="937,370,1026,370,1027,540,983,545,989,652,962,650"
+                coords="41,613,95,614,99,731,69,734,71,800,54,802,48,713"
                 shape="poly">
             </map>
+        </center>
          </div>
 
 <!-- -----------------------------------------------------------------Takeaways------------------------------------------------------------------------ -->
@@ -239,7 +257,6 @@
                     <li> <a href="https://www.facebook.com/alysn.sld/" target="_blank"><i class="fa fa-facebook"></i></a> </li>
                     <li> <a href="https://twitter.com/alysooonzxz" target="_blank"><i class="fa fa-twitter"></i></a> </li>
                     <li> <a href="https://www.instagram.com/alysn_sld/" target="_blank"><i class="fa fa-instagram"></i></a> </li>
-                    <li> <a href="https://www.youtube.com/channel/UCBf_ybsqVEDmGyqWuBE4yxg" target="_blank"><i class="fa fa-youtube"></i></a> </li>
                 </ul>
             </div>
             <div class="footer-bottom">

@@ -1,11 +1,12 @@
 <html>
     <head>
         <title> Office </title>
-        <link rel="stylesheet" style type="text/css" href="../style/index.css">
+        <link rel="stylesheet" style type="text/css" href="../index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     </head>
 
     <body>
+        <h1 class="wp"> The Office </h1>
         <div class="container-slide">
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -26,6 +27,11 @@
           </div>
         </div>
 
+        <p class="desc-wp">This our office. It is for our business which is “<a href="https://www.facebook.com/MusicClothingPH" target="_blank">Musiclo.</a>”. This
+        is where we manage the files, create the designs and receive orders from the customers. </p>
+
+        <center><button> Back </button></center>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
         <script>
@@ -42,6 +48,13 @@
                 prevEl: '.swiper-button-prev',
             },
             });
+
+            let buttBack = document.querySelector('button');
+
+            buttBack.addEventListener('click',() => (
+    
+            window.history.back()
+            ));
         </script>
     </body>
 </html>
