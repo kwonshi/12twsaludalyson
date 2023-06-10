@@ -1,11 +1,12 @@
 <html>
     <head>
         <title> Living Room 2 </title>
-        <link rel="stylesheet" style type="text/css" href="../style/index.css">
+        <link rel="stylesheet" style type="text/css" href="../index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     </head>
 
     <body>
+        <h1 class="wp"> The Living Room 2 </h1>
         <div class="container-slide">
         <div class="swiper">
             <!-- Additional required wrapper -->
@@ -25,6 +26,13 @@
           </div>
         </div>
 
+        <p class="desc-wp">Our 2nd living room. This is where we usually do our business, 
+            which is a clothing store called  “<a href="https://www.facebook.com/MusicClothingPH" target="_blank">Musiclo.</a>” . There are printing press machines here for the clothes, me, 
+            my brother and dad are the ones who mostly handle these machines. But this was still a living room before. 
+        </p>
+
+        <center><button> Back </button></center>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
         <script>
@@ -41,6 +49,13 @@
                 prevEl: '.swiper-button-prev',
             },
             });
+
+            let buttBack = document.querySelector('button');
+
+            buttBack.addEventListener('click',() => (
+    
+            window.history.back()
+            ));
         </script>
     </body>
 </html>
